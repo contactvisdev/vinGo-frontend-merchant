@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#F3F4F6"/>
+  <g transform="translate(160, 100)">
+    <path d="M40 0C17.9 0 0 17.9 0 40c0 22.1 17.9 40 40 40s40-17.9 40-40C80 17.9 62.1 0 40 0zm0 70c-16.5 0-30-13.5-30-30s13.5-30 30-30 30 13.5 30 30-13.5 30-30 30z" fill="#D1D5DB"/>
+    <path d="M40 20c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm0 30c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z" fill="#D1D5DB"/>
+    <rect x="15" y="85" width="50" height="6" rx="3" fill="#D1D5DB"/>
+  </g>
+  <text x="200" y="220" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#9CA3AF">No image available</text>
+</svg>

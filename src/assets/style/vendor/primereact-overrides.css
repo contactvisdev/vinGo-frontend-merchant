@@ -1,0 +1,140 @@
+/* ─── PrimeReact MultiSelect ─── */
+/* Hover on remove icon — pseudo-class, can't target via pt */
+.p-multiselect-chip .p-multiselect-token .p-multiselect-token-icon:hover {
+  color: var(--primary-color-text) !important;
+}
+
+/* Chip container — structural z-index fix, targets display="chip" root */
+.p-multiselect-chip {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Checkbox highlight states — complex :has() selectors, can't use pt */
+.p-multiselect-panel .p-checkbox.p-highlight .p-checkbox-box,
+.p-multiselect-panel .p-checkbox-input .p-checkbox:not(.p-disabled):has(.p-checkbox-input:hover).p-highlight .p-checkbox-box {
+  border-color: var(--color-primary) !important;
+  background: var(--color-primary) !important;
+  color: var(--primary-color-text) !important;
+}
+
+.p-multiselect-panel .p-checkbox.p-highlight .p-checkbox-box .p-checkbox-icon,
+.p-multiselect-panel .p-checkbox.p-highlight .p-checkbox-box .p-icon {
+  color: var(--primary-color-text) !important;
+}
+
+.p-multiselect-panel .p-checkbox-input .p-checkbox:not(.p-disabled):has(.p-checkbox-input:hover) .p-checkbox-box {
+  border-color: var(--color-primary) !important;
+}
+
+.p-multiselect-checkbox {
+  margin-right: 4px !important;
+}
+
+.p-multiselect-filter-icon {
+  top: 15% !important;
+}
+
+/* ─── PrimeReact Checkbox ─── */
+.p-checkbox-input {
+  border: solid 1px var(--color-neutral-400) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 8px !important;
+}
+
+/* ─── PrimeReact DatePicker ─── */
+.p-datepicker-trigger {
+  border: solid 1px var(--color-neutral-400) !important;
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  height: 45px !important;
+}
+
+/* ─── PrimeReact Dialog ─── */
+.p-dialog-mask {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.p-dialog {
+  background: var(--color-white);
+  max-height: none !important;
+}
+
+.p-dialog .p-dialog-header {
+  border-bottom: 1px solid var(--color-neutral-300) !important;
+  padding: 10px 20px !important;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+  width: 21px;
+  height: 21px;
+  align-self: center !important;
+}
+
+
+
+.p-dialog-content {
+  padding: 10px 20px !important;
+  border-radius: 11px;
+  overflow: auto !important;
+  max-height: calc(100vh - 200px) !important;
+}
+
+.p-dialog .p-dialog-footer {
+  padding: 10px !important;
+  border-top: 1px solid var(--color-neutral-300) !important;
+}
+
+.p-dialog-header-icons {
+  margin: auto !important;
+}
+.p-datepicker.p-datepicker-timeonly {
+  padding: 10px 15px !important;
+}
+
+/* ─── PrimeReact Focus (disable blue shadows) ─── */
+*:focus,
+.p-focus,
+.p-button,
+.p-inputtext:focus,
+.p-button:focus,
+.p-dropdown:focus,
+.p-multiselect:focus,
+.p-calendar:focus,
+.p-calendar.p-inputwrapper-focus,
+.p-calendar.p-focus,
+.p-inputswitch:focus,
+.p-checkbox:focus,
+.p-radiobutton:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: var(--color-primary-600) !important;
+}
+
+/* ─── PrimeReact Galleria thumbnails ─── */
+.p-galleria .p-galleria-thumbnail-container {
+  background: #ffffff !important;
+  padding: 0.75rem 0.5rem !important;
+}
+
+.p-galleria .p-galleria-thumbnail-items-container {
+  background: #ffffff !important;
+}
+
+.p-galleria .p-galleria-thumbnail-item-content {
+  background: #ffffff !important;
+}
+
+.p-galleria .p-galleria-thumbnail-prev,
+.p-galleria .p-galleria-thumbnail-next {
+  color: var(--color-neutral-700) !important;
+  background: transparent !important;
+}
+
+.p-galleria .p-galleria-thumbnail-prev:hover,
+.p-galleria .p-galleria-thumbnail-next:hover {
+  background: var(--color-neutral-100) !important;
+  color: var(--color-neutral-900) !important;
+}

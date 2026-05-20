@@ -1,0 +1,69 @@
+.home-container {
+    height: auto;
+    /* full screen height */
+    background: var(--color-neutral-900);
+    /* black background for safety */
+    overflow: hidden;
+}
+
+/* Background section */
+.home-content {
+    height: calc(100vh - 65px);
+    position: relative;
+    color: white;
+}
+
+.home-content__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.home-content__overlay {
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(#00000072, #0000004D); */
+    z-index: 1;
+}
+
+.home-content>*:not(.home-content__bg):not(.home-content__overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+/* Blur Effects */
+.bg-blur {
+    box-shadow: 0 0.1px 0.1px 0.1px #ffffff26 inset;
+    backdrop-filter: blur(0.5px);
+}
+
+.box-blur {
+    backdrop-filter: blur(50px);
+}
+
+/* OTP Input Styling */
+.custom-otp-input {
+    width: 55px !important;
+    height: 55px !important;
+    border: 1px solid var(--color-neutral-400) !important;
+    border-radius: 13px !important;
+}
+
+.custom-otp-input input {
+    width: 55px !important;
+    height: 55px !important;
+    border: 1px solid var(--color-neutral-400) !important;
+    border-radius: 13px !important;
+}
+
+.p-inputotp-input {
+    width: 55px !important;
+    height: 55px !important;
+    border: 1px solid var(--color-neutral-400) !important;
+    border-radius: 13px !important;
+}
+
+/* ----------- RESPONSIVE ----------- */

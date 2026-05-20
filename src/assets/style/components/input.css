@@ -1,0 +1,320 @@
+/* ========================================
+   BASE STYLE (Large Desktop & Laptop)
+======================================== */
+.p-inputotp {
+  display: flex;
+  justify-content: space-around;
+  /* <-- same as Tailwind justify-around */
+  align-items: center;
+  /* vertically center the inputs inside the otp container */
+}
+
+.custom_switch {
+  .p-inputswitch-slider:before {
+    position: absolute;
+    content: "";
+    top: 4px;
+  }
+}
+
+.p-icon-field>.p-input-icon {
+  top: 25%;
+  right: 3px
+}
+
+.p-inputswitch.p-highlight .p-inputswitch-slider {
+  background: var(--color-primary);
+}
+
+.p-inputotp-input {
+  width: 48px !important;
+  height: 48px !important;
+  font-size: 18px;
+  border: 1.5px solid var(--color-neutral-300);
+  border-radius: 10px;
+  background: var(--color-white);
+  text-align: center !important;
+  /* Ensure digits are perfectly centered both horizontally and vertically */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Focus State */
+.p-inputotp-input:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: var(--shadow-focus) !important;
+}
+
+/* Placeholder */
+.p-inputotp-input::placeholder {
+  color: var(--color-neutral-500);
+}
+
+.pi-asterisk:before {
+  font-size: 6px;
+  color: var(--color-error);
+}
+
+.phoneinput {
+  input.react-international-phone-input.w-full.\!outline-none.text-base {
+    height: 40px;
+    border-radius: 0px 6px 6px 0;
+  }
+
+  button.react-international-phone-country-selector-button {
+    height: 40px;
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  .react-international-phone-country-selector-button__flag-emoji {
+    margin: 0 12px;
+  }
+}
+
+.p-multiselect-token {
+  margin: 0 5px 0 10px !important;
+}
+
+.menu-row {
+  margin: 0 !important;
+}
+
+.menu-catlog {
+  input {
+    border: none !important;
+    padding: 0 !important;
+    height: auto !important;
+  }
+
+  small {
+    display: none !important;
+  }
+}
+
+.customprice {
+  padding: 0 0 0 24px !important;
+}
+
+
+@media (max-width: 1440px) {
+  .star {
+    left: 31%;
+  }
+
+  .custom-star {
+    left: 27%;
+  }
+}
+
+/* ========================================
+   LAPTOP (1025px - 1366px)
+======================================== */
+@media (max-width: 1366px) {
+  .p-inputotp-input {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 16px;
+  }
+}
+
+
+/* ========================================
+   TABLETS (768px - 1024px)
+======================================== */
+@media (max-width: 1024px) {
+  .p-inputotp-input {
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 15px;
+  }
+
+  .star {
+    left: 38%;
+  }
+
+  .custom-star {
+    left: 34%;
+  }
+
+  .custom-btn {
+    width: 18% !important;
+  }
+}
+
+/* ========================================
+   LARGE MOBILE (481px - 767px)
+======================================== */
+@media (max-width: 768px) {
+  .p-inputotp-input {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 14px;
+  }
+
+  .custom-btn {
+    width: 25% !important;
+  }
+
+  .star {
+    left: 37%
+  }
+
+  .custom-star {
+    left: 38%;
+  }
+}
+
+.phoneinput {
+  input.react-international-phone-input.w-full.\!outline-none.text-base {
+    /* height: 46px; */
+    border-radius: 0px 6px 6px 0;
+  }
+
+  button.react-international-phone-country-selector-button {
+    height: 46px;
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  .react-international-phone-country-selector-button__flag-emoji {
+    margin: 0 4px 0 9px;
+  }
+
+  .react-international-phone-input {
+    height: 46px !important;
+    border: 1px solid var(--color-neutral-300) !important;
+    border-radius: 6px;
+  }
+
+  .react-international-phone-country-selector-button__dropdown-arrow {
+    margin: 0px 8px 0 0 !important;
+  }
+
+}
+
+
+/* ========================================
+   MID MOBILE (381px - 480px)
+======================================== */
+@media (max-width: 640px) {
+  .p-inputotp-input {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 12px;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE (up to 380px)
+======================================== */
+@media (max-width: 380px) {
+  .p-inputotp-input {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .p-inputotp-input {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 10px;
+  }
+}
+
+.react-tel-input {
+  display: flex;
+  align-items: center;
+  /* <-- Add this to center vertically */
+}
+
+.react-tel-input .form-control {
+  color: var(--color-neutral-900);
+  height: 40px;
+  /* default/mobile */
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+
+  /* lg breakpoint */
+  .react-tel-input .form-control {
+    height: 45px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1536px) {
+
+  /* 2xl breakpoint */
+  .react-tel-input .form-control {
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+.p-inputtext {
+  color: var(--color-neutral-900);
+  font-size: 10px;
+  /* Default (mobile + fallback) */
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: none !important;
+
+}
+.p-focus > .p-inputtext:focus {
+  border-color: var(--color-primary) !important;
+  border: solid 1.5px var(--color-primary) !important;
+}
+
+/* 📱 Tablet (481px to 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .p-inputtext {
+    font-size: 12px;
+  }
+}
+
+/* 💻 Laptop (1025px to 1600px) */
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .p-inputtext {
+    font-size: 14px;
+  }
+}
+
+/*  Monitor / Large Desktop (1601px and above) */
+@media (min-width: 1601px) {
+  .p-inputtext {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1300px) {
+  .menu-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+.custom-label{
+  width: max-content;
+}
+}
+
+
+/* Optional — smoother scrollbar */
+.custom-dialog-box .p-dialog-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-dialog-box .p-dialog-content::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-400);
+  border-radius: 10px;
+}

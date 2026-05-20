@@ -1,0 +1,6 @@
+/* ─── Vendor overrides (PrimeReact, phone inputs, OTP) ─── */
+@import "./primereact-overrides.css";
+@import "./react-tel-input.css";
+@import "./react-phone.css";
+@import "./otp.css";
+@import "./dark-mode-overrides.css";

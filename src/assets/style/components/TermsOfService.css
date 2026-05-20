@@ -1,0 +1,96 @@
+.tos-last-updated {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.tos-content {
+  max-height: 65vh;
+  overflow-y: auto;
+  padding: 0.5rem 1rem;
+  line-height: 1.75;
+  color: #374151;
+  font-size: 0.938rem;
+  scroll-behavior: smooth;
+}
+
+.tos-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tos-content::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 3px;
+}
+
+.tos-content::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+.tos-content::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.tos-intro {
+  font-size: 0.938rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tos-section {
+  margin-bottom: 1.5rem;
+}
+
+.tos-heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.tos-section p {
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
+.tos-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.tos-list li {
+  color: #4b5563;
+}
+
+.tos-contact {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.tos-contact p {
+  margin-bottom: 0.25rem;
+  color: #374151;
+}
+
+@media (max-width: 768px) {
+  .tos-content {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    max-height: 60vh;
+  }
+
+  .tos-heading {
+    font-size: 1rem;
+  }
+}

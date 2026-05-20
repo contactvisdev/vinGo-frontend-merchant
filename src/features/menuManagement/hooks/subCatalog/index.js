@@ -1,0 +1,1 @@
+export { useSubCatalog } from "./useSubCatalog";

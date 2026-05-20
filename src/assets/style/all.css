@@ -1,0 +1,21 @@
+/* ─── App styles bundle ─── */
+
+/* Base */
+@import "./base/index.css";
+
+/* Vendor overrides */
+@import "./vendor/index.css";
+
+/* Utilities */
+@import "./modal.css";
+@import "./scrollbar.css";
+
+/* Component styles */
+@import "./components/input.css";
+@import "./components/button.css";
+@import "./components/tabs.css";
+@import "./components/TermsOfService.css";
+@import "../../components/ui/Skeleton/AutoSkeleton.css";
+
+/* Feature styles */
+@import "../../features/auth/components/home.css";

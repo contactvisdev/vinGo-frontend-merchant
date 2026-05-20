@@ -1,0 +1,16 @@
+/* ─── OTP input overrides ─── */
+.custom-otp-input::placeholder {
+  color: var(--color-neutral-900) !important;
+  opacity: 0.5;
+}
+
+.custom-otp-input {
+  text-align: center !important;
+  color: var(--color-neutral-900) !important;
+  font-weight: 600;
+}
+
+.p-inputotp-input {
+  color: var(--color-neutral-900) !important;
+  text-align: center !important;
+}

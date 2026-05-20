@@ -1,0 +1,16 @@
+
+@layer base, primereact, utilities;
+
+/* 1. Tailwind v4 'base' layer, utilities into 'utilities' layer */
+@import "tailwindcss";
+
+/* 2. PrimeReact — theme wrapped in 'primereact' layer (overridden by project styles below) */
+@import "primereact/resources/themes/lara-light-cyan/theme.css" layer(primereact);
+@import "primeicons/primeicons.css";
+
+/* 3. Third-party plugins */
+@import "react-phone-number-input/style.css";
+
+/* 4. Project design tokens + styles (unlayered = highest priority, overrides PrimeReact) */
+@import "./assets/theme.css";
+@import "./assets/style/all.css";

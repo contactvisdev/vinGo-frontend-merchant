@@ -1,0 +1,1 @@
+export { useMenuCatalog } from "./useMenuCatalog";

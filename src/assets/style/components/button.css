@@ -1,0 +1,87 @@
+.primary-btn {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  border-radius: var(--radius-md);
+  font-weight: 400 !important;
+  border: 1px solid var(--color-primary);  
+}
+
+.secondary-btn {
+  background: var(--color-white);
+  color: var(--color-neutral-500);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-neutral-500);
+  font-weight: 400 !important;
+}
+
+.gray-btn {
+  background: var(--color-neutral-200);
+  color: var(--color-neutral-800);
+  border-radius: var(--radius-md);
+}
+
+.bg-primary {
+  background: var(--color-primary);
+}
+
+.line-btn {
+  background: var(--color-white);
+  color: var(--color-danger);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-danger);
+}
+
+.secondary-btn,
+.primary-btn,
+.line-btn,
+.gray-btn {
+  span {
+    font-weight: 400 !important;
+  }
+}
+
+.disbaled {
+  background-color: rgb(241, 241, 241);
+}
+
+.removebtn {
+  align-self: center;
+  margin: 4px 0 0px 0;
+}
+
+.priceremovebtn {
+  margin: 0 0 22px 0;
+}
+
+.customvariants {
+  width: -webkit-fill-available;
+  height: 100%;
+}
+
+.variantbtn {
+  margin: 0 0 19px 0px;
+}
+
+@media (max-width: 1540px) {
+  .reviewbtn {
+    width: 33%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .reviewbtn {
+    width: 29%;
+  }
+}
+
+@media (max-width: 1340px) {
+  .reviewbtn {
+    width: 34%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reviewbtn {
+    width: 42%;
+  }
+}

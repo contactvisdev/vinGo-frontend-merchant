@@ -1,0 +1,12 @@
+/* ─── react-phone-number-input / react-international-phone ─── */
+.react-international-phone-input {
+  height: 50px !important;
+}
+
+select.PhoneInputCountrySelect {
+  color: var(--color-neutral-900);
+}
+
+input.PhoneInputInput {
+  color: var(--color-neutral-900);
+}

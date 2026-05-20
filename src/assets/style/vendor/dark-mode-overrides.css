@@ -1,0 +1,64 @@
+/* ─── Dark mode — third-party component overrides ─── */
+
+/* PrimeReact Dropdown */
+.dark .p-dropdown-panel {
+  background: var(--color-neutral-100) !important;
+}
+
+.dark .p-dropdown-item:hover,
+.dark .p-dropdown-item.p-highlight {
+  background-color: var(--color-neutral-200) !important;
+}
+
+/* PrimeReact MultiSelect */
+.dark .p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+  background: var(--color-primary-200) !important;
+  padding: 4px 8px !important;
+  color: var(--color-primary-700) !important;
+}
+
+/* PrimeReact Dialog */
+.dark .p-dialog {
+  background: var(--color-neutral-100);
+}
+
+.dark .p-dialog-content {
+  color: var(--color-neutral-900);
+}
+
+/* react-tel-input */
+.dark .react-tel-input .country-list .country {
+  background-color: var(--color-neutral-100) !important;
+  color: var(--color-neutral-900) !important;
+}
+
+.dark .react-tel-input .country-list .country:hover {
+  background-color: var(--color-neutral-200) !important;
+}
+
+.dark .react-tel-input .country-list .search-box {
+  background-color: var(--color-neutral-100) !important;
+  color: var(--color-neutral-900) !important;
+}
+
+.dark .react-tel-input .country-list {
+  background-color: var(--color-neutral-100) !important;
+}
+
+/* Phone input (react-phone-number-input) */
+.dark select.PhoneInputCountrySelect {
+  color: var(--color-neutral-900);
+}
+
+.dark input.PhoneInputInput {
+  color: var(--color-neutral-900);
+}
+
+/* OTP input */
+.dark .custom-otp-input {
+  color: var(--color-neutral-900) !important;
+}
+
+.dark .p-inputotp-input {
+  color: var(--color-neutral-900) !important;
+}

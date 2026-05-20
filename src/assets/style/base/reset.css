@@ -1,0 +1,8 @@
+/* ─── Global base styles ─── */
+* {
+  font-family: var(--font-main);
+}
+
+body {
+  background-color: var(--color-neutral-50);
+}

@@ -1,0 +1,195 @@
+@theme {
+  /* Primary (teal) */
+  --color-primary-50: #ecfdf9;
+  --color-primary-100: #d0fbf0;
+  --color-primary-200: #a3f5e1;
+  --color-primary-300: #65edd0;
+  --color-primary-400: #43ddc8;
+  --color-primary-500: #33c9b4;
+  --color-primary: #43ddc8;
+  --color-primary-600: #28a894;
+  --color-primary-700: #1e8575;
+
+  /* Neutral (grays — consolidates 15+ scattered values) */
+  --color-neutral-50: #FDFDFD;
+  --color-neutral-100: #F5F5F5;
+  --color-neutral-200: #E9E9E9;
+  --color-neutral-300: #DCDCDC;
+  --color-neutral-400: #CACACA;
+  --color-neutral-500: #636363;
+  --color-neutral-600: #4D4D4D;
+  --color-neutral-700: #3A3A3A;
+  --color-neutral-800: #191919;
+  --color-neutral-900: #000000;
+
+  /* Success */
+  --color-success-50: #ecfdf5;
+  --color-success-100: #d1fae5;
+  --color-success: #10b981;
+  --color-success-700: #047857;
+
+  /* Error */
+  --color-error-50: #fef2f2;
+  --color-error: #ef4444;
+  --color-error-700: #b91c1c;
+
+  /* Danger */
+  --color-danger: #F30000;
+
+  /* Warning */
+  --color-warning-50: #fff7ed;
+  --color-warning: #F57037;
+  --color-warning-600: #F93535;
+  --color-warning-accent: #D32020;
+
+  /* Info */
+  --color-info-50: #eff6ff;
+  --color-info-100: #dbeafe;
+  --color-info: #1E5FCB;
+
+  /* Chart palette */
+  --color-chart-orange: #F57037;
+  --color-chart-amber: #F5A623;
+  --color-chart-teal: #36B37E;
+  --color-chart-sky: #00B8D9;
+  --color-chart-sage: #8DB38B;
+  --color-chart-muted: #C4B5A0;
+  --color-chart-grid: #e5e7eb;
+  --color-chart-tick: #6b7280;
+}
+
+/* ─── Non-color design tokens ─── */
+:root {
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-2xl: 32px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --shadow-focus: 0 0 4px rgba(67, 221, 200, 0.5);
+
+  /* Z-Index */
+  --z-dropdown: 30;
+  --z-topbar: 35;
+  --z-sidebar: 40;
+  --z-modal: 50;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* Gradients */
+  --primary-gradient: linear-gradient(96.46deg, #F57037 7.78%, #F93535 94.92%);
+  --dark-gradient: linear-gradient(96.46deg, #E05226 7.78%, #D32020 94.92%);
+
+  /* Font */
+  --font-main: 'Poppins', sans-serif;
+
+  /* ── Legacy aliases (kept for backward compat — prefer new tokens) ── */
+  --primary-color: var(--color-primary);
+  --text-color: var(--color-neutral-900);
+  --text-light: var(--color-neutral-600);
+  --gray-color: var(--color-neutral-100);
+  --gray-dark: var(--color-neutral-500);
+  --white-color: #FFFFFF;
+}
+
+/* ─── PrimeReact lara theme overrides ─── */
+/* Variable names used by primereact/resources/themes/lara-* (no --p- prefix) */
+:root {
+  /* Brand — --primary-color already set in legacy aliases above */
+  --primary-color-text: #FFFFFF;
+
+  /* Primary shade scale — replaces lara-light-cyan's cyan shades with project teal */
+  --primary-50: var(--color-primary-50);
+  --primary-100: var(--color-primary-100);
+  --primary-200: var(--color-primary-200);
+  --primary-300: var(--color-primary-300);
+  --primary-400: var(--color-primary-400);
+  --primary-500: var(--color-primary);
+  --primary-600: var(--color-primary-600);
+  --primary-700: var(--color-primary-700);
+  --primary-800: var(--color-primary-700);
+  --primary-900: var(--color-primary-700);
+
+  /* Highlight (selected / active state) */
+  --highlight-bg: var(--color-primary-50);
+  --highlight-text-color: var(--color-primary);
+
+  /* Focus ring — project pink instead of lara's cyan */
+  --focus-ring: 0 0 0 2px rgba(67, 221, 200, 0.25);
+
+  /* Typography — --text-color already set in legacy aliases above */
+  --font-family: var(--font-main);
+  --text-color-secondary: var(--color-neutral-500);
+
+  /* Shape */
+  --border-radius: var(--radius-md);
+
+  /* Surfaces */
+  --surface-border: var(--color-neutral-300);
+  --surface-hover: var(--color-neutral-100);
+}
+
+/* ─── Dark mode overrides ─── */
+.dark {
+  color-scheme: dark;
+
+  /* Neutral scale — inverted */
+  --color-neutral-50: #121212;
+  --color-neutral-100: #1E1E1E;
+  --color-neutral-200: #2A2A2A;
+  --color-neutral-300: #3A3A3A;
+  --color-neutral-400: #4A4A4A;
+  --color-neutral-500: #7A7A7A;
+  --color-neutral-600: #A0A0A0;
+  --color-neutral-700: #CACACA;
+  --color-neutral-800: #E0E0E0;
+  --color-neutral-900: #F5F5F5;
+
+  /* Tailwind built-in overrides */
+  --color-white: #1E1E1E;
+  --color-black: #F5F5F5;
+  --color-gray-50: #1a1a1a;
+  --color-gray-100: #2A2A2A;
+  --color-gray-200: #3A3A3A;
+  --color-gray-300: #4A4A4A;
+  --color-gray-400: #6A6A6A;
+  --color-gray-500: #8A8A8A;
+  --color-gray-600: #A0A0A0;
+  --color-gray-700: #C0C0C0;
+  --color-gray-800: #E0E0E0;
+  --color-gray-900: #F0F0F0;
+
+  /* Primary — slightly brighter for dark surfaces */
+  --color-primary-50: #0d2d28;
+  --color-primary-100: #143f38;
+  --color-primary-200: #1c594e;
+
+  /* Semantic colors — darker tints for dark bg */
+  --color-success-50: #0d2818;
+  --color-success-100: #133a22;
+  --color-error-50: #2d1212;
+  --color-info-50: #121d2d;
+  --color-info-100: #1a2940;
+  --color-warning-50: #2d1a0d;
+
+  /* Shadows — deeper on dark bg */
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+  /* Chart grid/tick */
+  --color-chart-grid: #3A3A3A;
+  --color-chart-tick: #A0A0A0;
+
+  /* Legacy aliases */
+  --white-color: #1E1E1E;
+}
