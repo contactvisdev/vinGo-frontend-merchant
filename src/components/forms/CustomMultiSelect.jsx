@@ -81,7 +81,7 @@ export const CustomMultiSelect = React.memo(forwardRef(
           itemTemplate={itemTemplate}
           selectedItemTemplate={selectedItemTemplate}
           pt={pt}
-          className={`${className} ${getInputClasses("w-full min-h-[42px] flex items-center", false)} ${hasError ? "border-primary! p-invalid" : ""}`}
+          className={`${className} ${getInputClasses("w-full min-h-[42px] flex items-center", false)} ${hasError ? "border-error! p-invalid" : ""}`}
           {...rest}
         />
       </InputLayout>

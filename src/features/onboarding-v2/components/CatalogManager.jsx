@@ -161,7 +161,7 @@ export default function CatalogManager({
           />
         </div>
         <small
-          className={`text-primary block text-sm mt-1 min-h-5 ${formData?.formErrors?.[nameField] ? "visible" : "invisible"}`}
+          className={`text-error block text-sm mt-1 min-h-5 ${formData?.formErrors?.[nameField] ? "visible" : "invisible"}`}
         >
           {formData?.formErrors?.[nameField] || "\u00A0"}
         </small>

@@ -96,7 +96,7 @@ const CustomInput = React.memo(forwardRef(
                   currencySymbol && symbolPosition === "right" && "pr-6!",
                 ].filter(Boolean).join(" "),
                 !!icon,
-              )} ${hasError ? "border-primary! p-invalid" : ""}`}
+              )} ${hasError ? "border-error! p-invalid" : ""}`}
               id={name}
               name={name}
               onClick={onClick}

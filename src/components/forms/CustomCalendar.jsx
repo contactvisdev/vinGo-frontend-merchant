@@ -75,7 +75,7 @@ const CustomCalendar = React.memo(
             maxDate={maxDate}
             invalid={hasError}
             className={`w-full ${className}`}
-            inputClassName={`${getInputClasses("w-full", true)} ${hasError ? "border-primary!" : ""} !rounded-r-none`}
+            inputClassName={`${getInputClasses("w-full", true)} ${hasError ? "border-error!" : ""} !rounded-r-none`}
             appendTo={document.body}
             {...props}
           />

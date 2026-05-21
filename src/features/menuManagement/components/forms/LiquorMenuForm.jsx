@@ -562,7 +562,7 @@ export default function LiquorMenuForm({
             isUploading={api.fileUploadLoading}
           />
           {data?.formErrors?.item_img && (
-            <p className="text-primary 2xl:text-sm lg:text-xs text-[10px] mt-1">
+            <p className="text-error 2xl:text-sm lg:text-xs text-[10px] mt-1">
               Product image required
             </p>
           )}

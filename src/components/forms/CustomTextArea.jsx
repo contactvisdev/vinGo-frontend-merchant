@@ -50,7 +50,7 @@ export const CustomTextArea = React.memo(forwardRef(
           rows={rows}
           disabled={disabled}
           className={
-            `${inputClass || "w-full border rounded-md px-3 py-2 placeholder:text-neutral-600 resize-none"} ${hasError ? "border-primary! p-invalid" : "border-neutral-400"} ${className || ""}`
+            `${inputClass || "w-full border rounded-md px-3 py-2 placeholder:text-neutral-600 resize-none"} ${hasError ? "border-error! p-invalid" : "border-neutral-400"} ${className || ""}`
           }
           {...props}
         />

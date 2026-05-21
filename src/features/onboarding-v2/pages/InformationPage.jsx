@@ -244,7 +244,7 @@ export default function InformationPage() {
               onClick={() => setShowAddressDialog(true)}
               className={`flex items-center pt-0 mt-0 justify-between w-full border rounded-md px-3 bg-white cursor-pointer 2xl:h-[50px] lg:h-[45px] h-11.5 ${
                 data?.formErrors?.complete_address
-                  ? "border-primary"
+                  ? "border-error"
                   : "border-neutral-400"
               }`}
             >
@@ -269,7 +269,7 @@ export default function InformationPage() {
             </div>
 
             {data?.formErrors?.complete_address && (
-              <p className="text-primary text-xs">
+              <p className="text-error text-xs">
                 {data.formErrors.complete_address}
               </p>
             )}
@@ -338,7 +338,7 @@ export default function InformationPage() {
       </BaseCard>
 
       <BaseCard title="Business Hours & Schedule" extraClassName="px-[14%]!">
-        {scheduleErr && <p className="p-error text-primary">{scheduleErr}</p>}
+        {scheduleErr && <p className="p-error text-error">{scheduleErr}</p>}
         <div className="w-full">
           <BusinessHoursSchedule
             initialHours={data.hours}

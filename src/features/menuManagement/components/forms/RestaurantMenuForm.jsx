@@ -46,7 +46,7 @@ function DropdownsAndNameSection({
           errorMessage={dropdownErrors.catalog}
           required
         />
-        {/* <p className={`text-primary min-h-5 2xl:text-xs lg:text-[10px] text-[8px] ${dropdownErrors.catalog ? "visible" : "invisible"}`}>
+        {/* <p className={`text-error min-h-5 2xl:text-xs lg:text-[10px] text-[8px] ${dropdownErrors.catalog ? "visible" : "invisible"}`}>
           {dropdownErrors.catalog || "\u00A0"}
         </p> */}
       </div>
@@ -64,7 +64,7 @@ function DropdownsAndNameSection({
           filterBy="name"
           required
         />
-        {/* <p className={`text-primary min-h-5 2xl:text-xs lg:text-[10px] text-[8px] ${dropdownErrors.foodType ? "visible" : "invisible"}`}>
+        {/* <p className={`text-error min-h-5 2xl:text-xs lg:text-[10px] text-[8px] ${dropdownErrors.foodType ? "visible" : "invisible"}`}>
           {dropdownErrors.foodType || "\u00A0"}
         </p> */}
       </div>
@@ -78,7 +78,7 @@ function DropdownsAndNameSection({
           placeholder="Select a Promotional Category"
           ignoreError={true}
         />
-        {/* <p className={`text-primary min-h-5 2xl:text-xs lg:text-[10px] text-[8px] ${dropdownErrors.promo ? "visible" : "invisible"}`}>
+        {/* <p className={`text-error min-h-5 2xl:text-xs lg:text-[10px] text-[8px] ${dropdownErrors.promo ? "visible" : "invisible"}`}>
           {dropdownErrors.promo || "\u00A0"}
         </p> */}
       </div>
@@ -148,8 +148,8 @@ function ImageAndAvailabilitySection({
           sizeHint="Recommended size: 361 x 288px"
         />
 
-        <p
-          className={`text-primary min-h-5 text-[14px] mt-1 ${data?.formErrors?.item_img ? "visible" : "invisible"}`}
+<p
+            className={`text-error min-h-5 text-[14px] mt-1 ${data?.formErrors?.item_img ? "visible" : "invisible"}`}
         >
           {(data?.formErrors?.item_img && "Image is required") || "\u00A0"}
         </p>
@@ -190,7 +190,7 @@ function ImageAndAvailabilitySection({
             />
           </div>
           <p
-            className={`text-primary min-h-5  text-[14px] mt-1 ${data?.formErrors?.foodType ? "visible" : "invisible"}`}
+            className={`text-error min-h-5  text-[14px] mt-1 ${data?.formErrors?.foodType ? "visible" : "invisible"}`}
           >
             {data?.formErrors?.foodType || "\u00A0"}
           </p>
@@ -377,7 +377,7 @@ export default function RestaurantMenuForm({
               showDefaultCheckbox
             />
             {data?.formErrors?.defaultVariantRequired && (
-              <p className="text-primary text-[14px] px-4 sm:px-6 mt-1">
+              <p className="text-error text-[14px] px-4 sm:px-6 mt-1">
                 {data.formErrors.defaultVariantRequired}
               </p>
             )}

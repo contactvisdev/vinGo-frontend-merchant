@@ -118,7 +118,7 @@ export default function Login() {
                 })}
               </div>
               {mobileData?.formErrors?.role && (
-                <p className="text-primary text-xs mt-1.5 min-h-5">
+                <p className="text-error text-xs mt-1.5 min-h-5">
                   {mobileData.formErrors.role}
                 </p>
               )}

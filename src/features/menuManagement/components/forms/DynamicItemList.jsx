@@ -62,11 +62,11 @@ export default function DynamicItemList({
                   />
 
                   <p
-                    className={`text-primary text-sm min-h-[20px] ${
-                      errors[`${prefix}_${index}_name`]
-                        ? "visible"
-                        : "invisible"
-                    }`}
+className={`text-error text-sm min-h-[20px] ${
+                       errors[`${prefix}_${index}_name`]
+                         ? "visible"
+                         : "invisible"
+                     }`}
                   >
                     {errors[`${prefix}_${index}_name`] || "\u00A0"}
                   </p>
@@ -90,11 +90,11 @@ export default function DynamicItemList({
                   />
 
                   <p
-                    className={`text-primary text-sm min-h-[20px] ${
-                      errors[`${prefix}_${index}_price`]
-                        ? "visible"
-                        : "invisible"
-                    }`}
+className={`text-error text-sm min-h-[20px] ${
+                       errors[`${prefix}_${index}_price`]
+                         ? "visible"
+                         : "invisible"
+                     }`}
                   >
                     {errors[`${prefix}_${index}_price`] || "\u00A0"}
                   </p>

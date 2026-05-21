@@ -330,7 +330,7 @@ export default function CustomImageUploaderBox({
       {multiple ? (
         <div
           className={`border border-dashed rounded-lg p-3 bg-gray-50
-          ${hasError ? "border-primary" : "border-neutral-400"}
+          ${hasError ? "border-error" : "border-neutral-400"}
           ${disabled ? "pointer-events-none opacity-60" : ""}`}
         >
           {imageList.length === 0 && !isUploading ? (
@@ -343,7 +343,7 @@ export default function CustomImageUploaderBox({
                 <span className="text-gray-400 2xl:text-xs lg:text-[10px] text-[9px]">{sizeHint}</span>
               )}
               {errorMessage && (
-                <span className="text-primary 2xl:text-sm lg:text-xs text-[10px]">{errorMessage}</span>
+                <span className="text-error 2xl:text-sm lg:text-xs text-[10px]">{errorMessage}</span>
               )}
             </div>
           ) : (
@@ -396,7 +396,7 @@ export default function CustomImageUploaderBox({
         <div
           onClick={openFileDialog}
           className={`relative border border-dashed rounded-lg p-4 h-32 flex items-center justify-center bg-gray-50
-          ${hasError ? "border-primary" : "border-neutral-400"}
+          ${hasError ? "border-error" : "border-neutral-400"}
           ${disabled || isUploading ? "pointer-events-none opacity-60" : "cursor-pointer"}`}
         >
           {isUploading ? (
@@ -425,7 +425,7 @@ export default function CustomImageUploaderBox({
                 <span className="text-gray-400 2xl:text-xs lg:text-[10px] text-[9px]">{sizeHint}</span>
               )}
               {errorMessage && (
-                <span className="text-primary 2xl:text-sm lg:text-xs text-[10px]">{errorMessage}</span>
+                <span className="text-error 2xl:text-sm lg:text-xs text-[10px]">{errorMessage}</span>
               )}
             </div>
           )}
