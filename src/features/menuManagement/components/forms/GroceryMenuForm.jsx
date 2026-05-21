@@ -498,7 +498,7 @@ export default function GroceryMenuForm({
                           sizeHint="Recommended size: 361 x 288px"
                         />
                         {data?.formErrors?.[`variantImg_${index}`] && (
-                          <p className="text-primary 2xl:text-sm lg:text-xs text-[10px] mt-1">
+                          <p className="text-error 2xl:text-sm lg:text-xs text-[10px] mt-1">
                             {data.formErrors[`variantImg_${index}`]}
                           </p>
                         )}
@@ -535,7 +535,7 @@ export default function GroceryMenuForm({
             isUploading={api.fileUploadLoading}
           />
           {data?.formErrors?.item_img && (
-            <p className="text-primary 2xl:text-sm lg:text-xs text-[10px] mt-1">
+            <p className="text-error 2xl:text-sm lg:text-xs text-[10px] mt-1">
               {/* {data.formErrors.item_img}sss */}
               product image required
             </p>

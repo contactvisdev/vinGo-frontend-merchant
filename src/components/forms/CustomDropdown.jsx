@@ -72,7 +72,7 @@ export const CustomDropdown = React.memo(forwardRef(
           optionValue={optionValue}
           placeholder={placeholder}
           disabled={disabled}
-          className={`${className} lg:h-[45px] h-[42px] w-full border border-neutral-400 rounded-md flex items-center ${hasError ? "border-primary! p-invalid" : ""}`}
+          className={`${className} lg:h-[45px] h-[42px] w-full border border-neutral-400 rounded-md flex items-center ${hasError ? "border-error! p-invalid" : ""}`}
           dropdownIcon={
             loading ? (
               <span className="flex items-center justify-center">

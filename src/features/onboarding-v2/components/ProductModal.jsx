@@ -45,7 +45,7 @@ export default function ProductModal({
               placeholder="Select Category"
             />
             {catalogError && (
-              <p className="text-primary text-sm mt-1">{catalogError}</p>
+              <p className="text-error text-sm mt-1">{catalogError}</p>
             )}
           </div>
           <CustomInput label="Product Name" name="name" data={data} onChange={handleChange} required />

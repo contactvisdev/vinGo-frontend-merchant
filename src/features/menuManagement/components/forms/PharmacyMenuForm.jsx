@@ -649,7 +649,7 @@ export default function PharmacyMenuForm({
                           sizeHint="Recommended size: 361 x 288px"
                         />
                         {data?.formErrors?.[`variantImg_${index}`] && (
-                          <p className="text-primary 2xl:text-sm lg:text-xs text-[10px] mt-1">
+                          <p className="text-error 2xl:text-sm lg:text-xs text-[10px] mt-1">
                             {data.formErrors[`variantImg_${index}`]}
                           </p>
                         )}
@@ -753,7 +753,7 @@ export default function PharmacyMenuForm({
             isUploading={api.fileUploadLoading}
           />
           {data?.formErrors?.item_img && (
-            <p className="text-primary 2xl:text-sm lg:text-xs text-[10px] mt-1">
+            <p className="text-error 2xl:text-sm lg:text-xs text-[10px] mt-1">
               Product image required
             </p>
           )}

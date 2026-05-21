@@ -28,7 +28,7 @@ const InputLayout = React.memo(function InputLayout({
           className={`2xl:text-base lg:text-sm text-xs text-neutral-900 text-left mt-0 custom-label ${labelClassName}`}
         >
           {label || name}
-          {required && <span className="text-primary">*</span>}
+          {required && <span className="text-error">*</span>}
         </label>
       )}
 
@@ -38,7 +38,7 @@ const InputLayout = React.memo(function InputLayout({
       {/* ERROR MESSAGE (WAY-1 FIX → always reserve space) */}
       {!ignoreError && finalError ? (
         <small
-          className={`text-primary min-h-5 2xl:text-sm lg:text-xs text-[10px] ${checkbox && "ml-5"}`}
+          className={`text-error min-h-5 2xl:text-sm lg:text-xs text-[10px] ${checkbox && "ml-5"}`}
           id="error-element"
         >
           {finalError && <span>{finalError}</span>}

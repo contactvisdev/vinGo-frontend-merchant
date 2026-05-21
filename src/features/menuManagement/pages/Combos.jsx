@@ -238,7 +238,7 @@ export default function Combos() {
               sizeHint="Recommended size: 331 x 161px"
             />
             {formData.formErrors?.combo_image && (
-              <small className="text-primary text-sm mt-1 block">
+              <small className="text-error text-sm mt-1 block">
                 {formData.formErrors.combo_image}
               </small>
             )}

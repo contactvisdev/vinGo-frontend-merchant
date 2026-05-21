@@ -19,7 +19,7 @@ export default function PromotionalCatalogFormFields({
     if (!showAllErrors && !hasError) return null;
     return (
       <small
-        className={`text-primary min-h-5 block mt-1 text-sm ${hasError ? "visible" : "invisible"}`}
+        className={`text-error min-h-5 block mt-1 text-sm ${hasError ? "visible" : "invisible"}`}
       >
         {hasError || "\u00A0"}
       </small>
@@ -67,7 +67,7 @@ export default function PromotionalCatalogFormFields({
           }
           rows={3}
           placeholder="Enter description"
-          className={`w-full border rounded-lg px-4 py-2 ${formErrors?.description ? "border-primary!" : "border-neutral-400"}`}
+          className={`w-full border rounded-lg px-4 py-2 ${formErrors?.description ? "border-error!" : "border-neutral-400"}`}
         />
         {renderError("description")}
       </div>
